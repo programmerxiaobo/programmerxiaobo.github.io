@@ -427,29 +427,22 @@
   
 
   
-
-
-      <div id="gitalk-container"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
-
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
-var gitalk = new Gitalk({
-  clientID: '',
-  clientSecret: '',
-  repo: 'comment.git',
-  owner: '',
-  admin: [''],
-  id: md5(window.location.pathname),
-  distractionFreeMode: true
+var gitment = new Gitment({
+  id: "https://programmerxiaobo.github.io/2020/04/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/",
+  owner: 'programmerxiaobo',
+  repo: 'gitment.git',
+  oauth: {
+    client_id: 'e847a9b2c1db750d2dd0',
+    client_secret: '73caf230f6a065abda12dfa9d563990fed79e3dc',
+  },
 })
-
-gitalk.render('gitalk-container')
+gitment.render('gitment-ctn')
 </script>
-
   
-
 
 
 
