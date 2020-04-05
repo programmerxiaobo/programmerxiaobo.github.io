@@ -418,20 +418,26 @@
   
 
   
-  <div id="gitment-ctn"></div> 
-<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
-<script src="https://www.wenjunjiang.win/js/gitment.js"></script>
-<script>
-var gitment = new Gitment({
-  id: "https://programmerxiaobo.github.io/2020/04/04/%E8%87%B4%E6%95%AC%E8%8B%B1%E9%9B%84%E7%BC%85%E6%80%80%E9%80%9D%E8%80%85/",
-  owner: 'programmerxiaobo',
-  repo: 'gitment.git',
-  oauth: {
-    client_id: 'e847a9b2c1db750d2dd0',
-    client_secret: '73caf230f6a065abda12dfa9d563990fed79e3dc',
-  },
+
+  
+  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+
+if(true){
+	var gitalk = new Gitalk({
+  	clientID: 'f5587169d326394fc269',
+  	clientSecret: '0099a0d8ff193999e3c850ddfc3c7d68b53025e5',
+  	repo: 'comment',
+  	owner: 'programmerxiaobo',
+  	admin: ['programmerxiaobo'],
+  	id: 'Sat Apr 04 2020 22:37:56 GMT+0800',
+  	distractionFreeMode: 'true'
 })
-gitment.render('gitment-ctn')
+gitalk.render('gitalk-container') 
+}
 </script>
   
 
