@@ -62,7 +62,7 @@
 			</ul>
 		</nav>
 		<nav>
-    总文章数 6
+    总文章数 8
 </nav>
 		<nav class="header-smart-menu">
     		
@@ -244,6 +244,231 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/04/02/%E6%B5%8B%E8%AF%95%E4%B8%AD/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-java实习生面试题（二）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/02/java%E5%AE%9E%E4%B9%A0%E7%94%9F%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89/">java实习生面试题（二）</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/02/java%E5%AE%9E%E4%B9%A0%E7%94%9F%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89/" class="archive-article-date">
+  	<time datetime="2020-05-02T01:18:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-02</time>
+</a>
+        
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">1.6k字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">5分</span>
+      </span>
+    </span>
+</div>
+
+          
+        
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="面试题（二）"><a href="#面试题（二）" class="headerlink" title="面试题（二）"></a>面试题（二）</h1><h2 id="1、一个-java源文件中是否可以包括多个类（不是内部类）？有什么限制？"><a href="#1、一个-java源文件中是否可以包括多个类（不是内部类）？有什么限制？" class="headerlink" title="1、一个.java源文件中是否可以包括多个类（不是内部类）？有什么限制？"></a>1、一个.java源文件中是否可以包括多个类（不是内部类）？有什么限制？</h2><p><code>可以有多个类，但只能有一个public的类，并且public类名必须与文件名一致。</code> </p>
+<h2 id="2、-amp-和-amp-amp-的区别？"><a href="#2、-amp-和-amp-amp-的区别？" class="headerlink" title="2、&amp;和&amp;&amp;的区别？"></a>2、&amp;和&amp;&amp;的区别？</h2><p><code>1、&amp;和&amp;&amp;都可以做逻辑与的运算符，表示逻辑与（and）,当运算符两边表达式的结果为true时，整个运算结果才为true,否则只要有一个是false就是false</code> </p>
+<p><code>2、&amp;&amp;具备短路功能，如果第一个表达式为false时，不会在计算第二个表达式</code> </p>
+<p><code>3、&amp;还可以用作位运算符，当&amp;操作符两边的表达式不是boolean类型时，&amp;表示位与操作，通常使用0x0f来与一个整数进行&amp;运算，来获取该整数的最低4个bit位</code></p>
+<h2 id="3、switch语句能否作用在byte上，能否作用在long上，能否作用在String上？"><a href="#3、switch语句能否作用在byte上，能否作用在long上，能否作用在String上？" class="headerlink" title="3、switch语句能否作用在byte上，能否作用在long上，能否作用在String上？"></a>3、switch语句能否作用在byte上，能否作用在long上，能否作用在String上？</h2><p><code>在switch（expr1）中，expr1只能是一个整数表达式或者枚举常量（更大字体），整数表达式可以是int基本类型或Integer包装类型，由于，byte,short,char都可以隐含转换为int，所以，这些类型以及这些类型的包装类型也是可以的。显然，long和String类型都不符合switch的语法规定，并且不能被隐式转换成int类型，所以，它们不能作用于swtich语句中。但是在JDK7的新特性中，switch语句可以用字符串</code> </p>
+<h2 id="4、char型变量中能不能存一个中文汉字？为什么？"><a href="#4、char型变量中能不能存一个中文汉字？为什么？" class="headerlink" title="4、char型变量中能不能存一个中文汉字？为什么？"></a>4、char型变量中能不能存一个中文汉字？为什么？</h2><p><code>char型变量是用来存储Unicode编码的字符的，unicode编码字符集中包含了汉字，所以，char型变量中当然可以存储汉字啦。不过，如果某个特殊的汉字没有被包含在unicode编码字符集中，那么，这个char型变量中就不能存储这个特殊汉字。补充说明：unicode编码占用两个字节，所以，char类型的变量也是占用两个字节。</code> </p>
+<h2 id="5、用最有效的方法算出2乘以8等于几？"><a href="#5、用最有效的方法算出2乘以8等于几？" class="headerlink" title="5、用最有效的方法算出2乘以8等于几？"></a>5、用最有效的方法算出2乘以8等于几？</h2><p><code>2 &lt;&lt; 3，因为将一个数左移n位，就相当于乘以了2的n次方，那么，一个数乘以8只要将其左移3位即可，而位运算cpu直接支持的，效率最高，所以，2乘以8等於几的最效率的方法是2 &lt;&lt; 3</code> </p>
+<h2 id="6、使用final关键字修饰一个变量时，是引用不能变，还是引用对象不能变？"><a href="#6、使用final关键字修饰一个变量时，是引用不能变，还是引用对象不能变？" class="headerlink" title="6、使用final关键字修饰一个变量时，是引用不能变，还是引用对象不能变？"></a>6、使用final关键字修饰一个变量时，是引用不能变，还是引用对象不能变？</h2><p><code>使用final关键字修饰一个变量时，是指引用变量不能变，引用变量所指向的对象中的内容还是可以改变的。</code> </p>
+<p><code>1、在语法定义上的区别：静态变量前要加static关键字，而实例变量前则不加。</code> </p>
+<p><code>2、在程序运行时的区别：实例变量属于某个对象的属性，必须创建了实例对象，其中的实例变量才会被分配空间，才能使用这个实例变量。静态变量不属于某个实例对象，而是属于类，所以也称为类变量，只要程序加载了类的字节码，不用创建任何实例对象，静态变量就会被分配空间，静态变量就可以被使用了。总之，实例变量必须创建对象后才可以通过这个对象来使用，静态变量则可以直接使用类名来引用</code> </p>
+<h2 id="7、是否可以从一个static方法内部发出对非static方法的调用？"><a href="#7、是否可以从一个static方法内部发出对非static方法的调用？" class="headerlink" title="7、是否可以从一个static方法内部发出对非static方法的调用？"></a>7、是否可以从一个static方法内部发出对非static方法的调用？</h2><p><code>不可以。因为非static方法是要与对象关联在一起的，必须创建一个对象后，才可以在该对象上进行方法调用，而static方法调用时不需要创建对象，可以直接调用。也就是说，当一个static方法被调用时，可能还没有创建任何实例对象，如果从一个static方法中发出对非static方法的调用，那个非static方法是关联到哪个对象上的呢？这个逻辑无法成立，所以，一个static方法内部发出对非static方法的调用</code></p>
+<h2 id="8、Integer和int的区别？"><a href="#8、Integer和int的区别？" class="headerlink" title="8、Integer和int的区别？"></a>8、Integer和int的区别？</h2><p><code>1、int是java提供的8种原始数据类型之一。Java为每个原始类型提供了封装类，Integer是java为int提供的封装类。int的默认值为0，而Integer的默认值为null，即Integer可以区分出未赋值和值为0的区别，int则无法表达出未赋值的情况，例如，要想表达出没有参加考试和考试成绩为0的区别，则只能使用Integer。在JSP开发中，Integer的默认为null，所以用el表达式在文本框中显示时，值为空白字符串，而int默认的默认值为0，所以用el表达式在文本框中显示时，结果为0，所以，int不适合作为web层的表单数据的类型。</code></p>
+<p><code>2、Integer提供了多个与整数相关的操作方法，例如，将一个字符串转换成整数，Integer中还定义了表示整数的最大值和最小值的常量</code></p>
+<h2 id="9、Math-round-11-5-等于多少？Math-round-11-5-等于多少？"><a href="#9、Math-round-11-5-等于多少？Math-round-11-5-等于多少？" class="headerlink" title="9、Math.round(11.5)等于多少？Math.round(11.5)等于多少？"></a>9、Math.round(11.5)等于多少？Math.round(11.5)等于多少？</h2><p><code>Math类中提供了三个与取整有关的方法：ceil.floor.round，ceil该方法就表示向上取整,所以例如，Math.ceil(11.3)的结果为12,Math.ceil(-11.3)的结果是-11，floor该方法就表示向下取整，所以例如，Math.floor(11.6)的结果为11,Math.floor(-11.6)的结果是-12，round该方法是四舍五入，算法为Math.floor(x+0.5)，即将原来的数字加上0.5后再向下取整，所以，Math.round(11.5)的结果为12，Math.round(-11.5)的结果为-11</code></p>
+<h2 id="10、Overload-重载-和Override-重写-的区别，Overloaded是否可以改变返回值类型"><a href="#10、Overload-重载-和Override-重写-的区别，Overloaded是否可以改变返回值类型" class="headerlink" title="10、Overload(重载)和Override(重写)的区别，Overloaded是否可以改变返回值类型?"></a>10、Overload(重载)和Override(重写)的区别，Overloaded是否可以改变返回值类型?</h2><p><code>1、方法重载（Overload）：在本类中出现了方法名相同但参数列表不同的方法，与返回值无关，可以改变返回值类型，只看参数列表；</code></p>
+<p><code>2、方法重写（Override）：子类中出现了和父类中方法声明一模一样的方法，与返回值有关，返回值和类型都是一样的。</code> </p>
+
+      
+
+      
+
+  <div class="declare" hidden="hidden"></div>
+
+
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">面试</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/02/java%E5%AE%9E%E4%B9%A0%E7%94%9F%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-java实习生面试题（一）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/01/java%E5%AE%9E%E4%B9%A0%E7%94%9F%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%B8%80%EF%BC%89/">java实习生面试题（一）</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/01/java%E5%AE%9E%E4%B9%A0%E7%94%9F%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%B8%80%EF%BC%89/" class="archive-article-date">
+  	<time datetime="2020-05-01T00:07:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-01</time>
+</a>
+        
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">424字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">1分</span>
+      </span>
+    </span>
+</div>
+
+          
+        
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="面试题（一）"><a href="#面试题（一）" class="headerlink" title="面试题（一）"></a>面试题（一）</h1><h2 id="1、什么是数据结构，java的数据结构你用过哪些？map和set的本质区别"><a href="#1、什么是数据结构，java的数据结构你用过哪些？map和set的本质区别" class="headerlink" title="1、什么是数据结构，java的数据结构你用过哪些？map和set的本质区别"></a>1、什么是数据结构，java的数据结构你用过哪些？map和set的本质区别</h2><h4 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构:"></a>数据结构:</h4><p><code>是指相互之间存在一种或多种特定关系的数据元素的集合。</code></p>
+<p><code>根据逻辑关系，数据结构分为两种，线性和非线性数据结构</code> </p>
+<h4 id="常见数据结构类型"><a href="#常见数据结构类型" class="headerlink" title="常见数据结构类型:"></a>常见数据结构类型:</h4><p><code>Java常见的数据结构有Collection和Map，其中Collection接口下包括List和Set接口，其下又有多个实现类如List下有 ArrayList、LinkedList和Vector等实现类，Set下有HashSet、LinkedSet等实现类和SortedSet接 口，HashSet下有LinkedHashSet子类，SortedSet接口下有TreeSet实现类。Map接口下有HashMap(有 LinkedHashMap子类)、HashTable(有Properties子类)实现类和SortedMap接口(有TreeMap实现类)。</code></p>
+<p><code>java的数据结构主要有List,Set,Map,ArrayList,HashMap,Properties等。</code></p>
+<h4 id="Map与Set的本质区别"><a href="#Map与Set的本质区别" class="headerlink" title="Map与Set的本质区别:"></a>Map与Set的本质区别:</h4><p><code>Set不能包含重复的元素，最多有一个空值，继承自Collection接口，底层是Map实现机制。Map不能包含重复的键，每个键最多对应一个映射的值，不能有空值键。两接口提供的方法不完全一样。</code></p>
+<h2 id="2、java中的Annotation的工作原理是什么"><a href="#2、java中的Annotation的工作原理是什么" class="headerlink" title="2、java中的Annotation的工作原理是什么"></a>2、java中的Annotation的工作原理是什么</h2><p><code>一个 annotation类型被定义为runtime retention后，它才是在运行时可见，当class文件被装载时被保存在class文件中的annotation才会被虚拟机读取</code></p>
+<p><code>Annotation提供一种机制，将程序的元素如:类，方法，属性，参数，本地变量，包和元数据联系起来。这样编译器可以将元数据存储在Class文件中。这样虚拟机和其它对象可以根据这些元数据来决定如何使用这些程序元素或改变它们的行为。</code></p>
+
+      
+
+      
+
+  <div class="declare" hidden="hidden"></div>
+
+
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">面试</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/01/java%E5%AE%9E%E4%B9%A0%E7%94%9F%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%B8%80%EF%BC%89/">展开全文 >></a>
         </p>
       
 
@@ -913,19 +1138,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">github错误系列</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">github相关操作</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color1">github错误系列</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">面试</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
